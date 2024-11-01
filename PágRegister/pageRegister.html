@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');  
+    </style>
+    <link rel="stylesheet" href="./css/pageRegister.css">
+    <link rel="stylesheet" href="./css/UserIncorreto.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <title>Página de Cadastro | Cadastro</title>
+</head>
+<body>
+    <h1>Seja bem vindo!</h1>
+    <div class="boxPrincipal">
+        <form>
+            <p>Nome :<br>
+            <input type="text" placeholder="Seu Nome" id="inNome">
+            </p>
+            <p>Email :<br>
+                <input type="text" placeholder="Seu Email" id="inEmail">
+            </p>
+            <p>Senha : <br>
+                <input type="password" placeholder="Senha deve conter 6 digitos" id="inSenha">
+                <br>
+            </p>
+            <input type="submit" id="inGo" value="Cadastrar"> 
+        </form>
+        <div class="userInvalido">
+            <button class="fechar" onclick="fechar()"> X </button>
+            <img src="/PágLogin/Imagens/emergencia.png" alt="login-inválido">
+            <p>Úsuario Inválido ou senha errado, Tente novamente!</p>
+        </div>    
+    </div>
+    <script src="pageRegister.js"></script>
+</body>
+</html>

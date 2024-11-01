@@ -1,0 +1,39 @@
+.corpo-notificacoes{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    float: right;
+    width: 15%;
+    margin: 10px 10px;
+    background-color: #fff;
+    transition: 2s;
+}
+.corpo-notificacoes p{
+    font-size: 20px;
+    margin: 5px;
+    margin-left: 22px;
+}
+.corpo-notificacoes ul{
+    height: 100%;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.corpo-notificacoes li{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 10px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 1.4rem;
+}
+.corpo-notificacoes li:hover{
+    background-color: #DCDCDC;
+}
+.nao-lida{
+    background-color: #c9c9c9;
+}

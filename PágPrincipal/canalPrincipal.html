@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="./css/canalPrincipal.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/boxNotificacoes.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/PágLogin/Imagens/dever-de-casa.png" type="image/x-icon">
+    <title> Home | CodeRieph</title>
+</head>
+
+<body>
+    <header>
+        <div class="conteudoDoHeader">
+            <h1 id="nome"></h1>
+            <div class="infos">
+                <img class="menu-hamburg" id="menu" src="./Imagens/menu_hamburguer.png"></img>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="menu-content">
+            <div>
+                <p class="sub-title-menu">Como você usa o RieperCode</p>
+                <ul class="corpo-lista">
+                    <li class="item-lista" id="btnNotificacao" onclick="openBoxNotification()">
+                        <img src="./Imagens/notificacao.png" alt="">
+                        <p>Notificações</p>
+                        <p class="numeric" id="notificationNumber"> 1 </p>
+                    </li>
+                    <li class="item-lista">
+                        <img class="sair" src="./Imagens/sair.png" alt="">
+                        <p>Salvos</p>
+                    </li>
+                    <li class="item-lista">
+                        <img src="./Imagens/tarefa-concluida.png" alt="">
+                        <p>Tarefas</p>
+                    </li>
+                    <li class="item-lista">
+                        <img src="./Imagens/enviar-mensagem.png" alt="">
+                        <p>Bate Papo</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="suporte">
+                <p class="sub-title-menu">Mais iformações e suporte</p>
+                <ul class="corpo-lista">
+                    <li class="item-lista">
+                        <img src="./Imagens/central-de-atendimento.png" alt="">
+                        <p>Suporte</p>
+                    </li>
+                    <li class="item-lista">
+                        <img src="./Imagens/silhueta-da-roda-dentada.png" alt="">
+                        <p>Configuração</p>
+                    </li>
+                    <li class="item-lista">
+                        <img src="./Imagens/sair.png" alt="">
+                        <p>Sair</p>
+                    </li>
+                </ul>
+            </div>
+            <p class="rieper-code">&#169;RieperCode</p>
+        </div>
+        <div class="corpo-notificacoes">
+            <p>Notificações</p>
+            <ul id="list-notificacoes">
+                <li onclick="lerMensagem()" class="mensagem-notificacao nao-lida">Você tem um cupom de 15% OFF </li>
+                <li onclick="lerMensagem()" class="mensagem-notificacao nao-lida">Voce tem tarefas não concluídas</li>
+                <li onclick="lerMensagem()" class="mensagem-notificacao nao-lida">Não se esqueça de fazer suas task</li>
+                <li onclick="lerMensagem()" class="mensagem-notificacao nao-lida">Lembre, você pode personalizar o site</li>
+                <li onclick="lerMensagem()" class="mensagem-notificacao nao-lida">Samba é um otimo gosto musical</li>
+            </ul>
+        </div>
+    </main>
+
+
+
+
+    <script src="./js/canalPrincipal.js"></script>
+    <script src="./js/boxNotificacao.js"></script>
+</body>
+
+</html>
